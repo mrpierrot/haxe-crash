@@ -1,24 +1,27 @@
 
-class Batch extends Drawable{
+class Batch{
     
     var first:BatchElement;
-    var last:BatchElement;
 
     public function new() {
   
     }
 
-    public function add(e:BatchElement) {
-		e.parent = this;
-		if (first == null) {
-			first = last = e;
-			e.prev = e.next = null;
-		} else {
-			last.next = e;
-			e.prev = last;
-			e.next = null;
-			last = e;
-		}
-		return e;
+	public function addFoo<T:Foo>( s : T ) : T {
+		
+		return s;
 	}
+
 }
+
+class BatchElement implements IAutoBuild{
+
+    public var parent:Batch;
+
+    public function new() {
+        
+    }
+}
+
+
+

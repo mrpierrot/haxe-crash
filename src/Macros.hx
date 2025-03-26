@@ -32,7 +32,7 @@ class Macros {
         var fieldClass = getClass(type);
         if(fieldClass != null){
             begin('crashTest.start '+getClassName(fieldClass));
-            var drawFunc = TypeTools.findField(fieldClass, "__foo");
+            TypeTools.findField(fieldClass, "__foo");
             end('crashTest.end '+getClassName(fieldClass));
         }
 	}

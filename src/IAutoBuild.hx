@@ -1,4 +1,4 @@
 @:autoBuild(Macros.build())
-interface IObject {
+interface IAutoBuild {
     
 }

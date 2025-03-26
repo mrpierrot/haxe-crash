@@ -1,5 +1,5 @@
 
 
-class Hero extends Unit<HeroData> {
+class Hero extends Unit<HeroData>  {
     
 }

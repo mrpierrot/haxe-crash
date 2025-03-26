@@ -2,15 +2,12 @@
 
 class Main {
 	var _hero:Hero;
+	var _data:HeroData;
 
 	function new() {
 		
 
 	}
-
-	function func(pH:HeroData) {
-        
-    }
 
 	static function main() {
 		new Main();
