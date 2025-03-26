@@ -1,4 +1,3 @@
-@:build(Macros.build())
 class Drawable {
 	/*
 	 * @BUG Comment this function to bypass the bug
