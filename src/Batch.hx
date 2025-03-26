@@ -1,5 +1,5 @@
 
-class Batch{
+class Batch {
     
     var first:BatchElement;
 
@@ -7,7 +7,10 @@ class Batch{
   
     }
 
-	public function addFoo<T:Foo>( s : T ) : T {
+	/*
+	 * Comment this function bypass the bug
+	 */
+	public function addShader<T:Shader>( s : T ) : T {
 		
 		return s;
 	}
@@ -16,7 +19,10 @@ class Batch{
 
 class BatchElement implements IAutoBuild{
 
-    public var parent:Batch;
+    /*
+	 * Comment this field bypass the bug
+	 */
+    public var batch:Batch;
 
     public function new() {
         

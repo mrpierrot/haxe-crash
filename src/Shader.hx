@@ -1,5 +1,5 @@
 
-class Foo {
+class Shader {
     
     public function new() {
         
