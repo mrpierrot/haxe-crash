@@ -1,0 +1,4 @@
+
+
+
+class HeroData extends UnitData {}
