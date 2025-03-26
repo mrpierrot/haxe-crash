@@ -1,23 +1,11 @@
 
-import Unit.Hero;
 
 
 class Main {
 
-	/*
-	 * @BUG Comment this field to bypass the bug
-	 */
-	var _hero:Hero;
+	var _hero:Unit.Hero;
 
-	/*
-	 * @BUG Comment this field to bypass the bug
-	 */
-	var _data:HeroData;
-
-	function new() {
-		
-
-	}
+	function new() {}
 
 	static function main() {
 		new Main();
