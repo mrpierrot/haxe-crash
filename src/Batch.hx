@@ -8,7 +8,7 @@ class Batch {
     }
 
 	/*
-	 * Comment this function bypass the bug
+	 * @BUG Comment this function bypass the bug
 	 */
 	public function addShader<T:Shader>( s : T ) : T {
 		
@@ -20,7 +20,7 @@ class Batch {
 class BatchElement implements IAutoBuild{
 
     /*
-	 * Comment this field bypass the bug
+	 * @BUG Comment this field bypass the bug
 	 */
     public var batch:Batch;
 
