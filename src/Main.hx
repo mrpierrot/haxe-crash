@@ -1,6 +1,4 @@
 
-import units.Hero;
-
 
 class Main {
 	var _hero:Hero;
