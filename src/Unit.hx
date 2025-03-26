@@ -1,21 +1,17 @@
 
-import Batch.BatchElement;
 
 /**
  * @BUG Move this at the end of this file bypass the bug.
  */
-class Hero extends Unit<HeroData>  {
-    
+class Hero extends Unit<HeroData>  {}
+
+@:build(Macros.build())
+abstract class BaseUnit{
+    public var rendering:Drawable;
 }
 
-abstract class BaseUnit implements IAutoBuild{
-    public var rendering:BatchElement;
-}
 
-
-abstract class Unit<T:UnitData> extends BaseUnit {
-	
-}
+abstract class Unit<T:UnitData> extends BaseUnit {}
 
 abstract class UnitData {
 	/*
